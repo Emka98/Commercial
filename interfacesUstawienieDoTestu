@@ -1,0 +1,137 @@
+auto lo
+iface lo inet loopback
+
+# A1
+auto enpA1
+iface enpA1 inet manual
+
+auto vmbr0
+iface vmbr0 inet static
+    address 192.168.1.10/24
+    gateway 192.168.1.1
+    bridge-ports enpA1
+    bridge-stp off
+    bridge-fd 0
+
+# A2
+auto enpA2
+iface enpA2 inet manual
+
+auto vmbr1
+iface vmbr1 inet static
+    address 192.168.2.10/24
+    bridge-ports enpA2
+    bridge-stp off
+    bridge-fd 0
+
+# A3
+auto enpA3
+iface enpA3 inet manual
+
+auto vmbr2
+iface vmbr2 inet static
+    address 192.168.3.10/24
+    bridge-ports enpA3
+    bridge-stp off
+    bridge-fd 0
+
+# A4
+auto enpA4
+iface enpA4 inet manual
+
+auto vmbr3
+iface vmbr3 inet static
+    address 192.168.4.10/24
+    bridge-ports enpA4
+    bridge-stp off
+    bridge-fd 0
+
+# A5
+auto enpA5
+iface enpA5 inet manual
+
+auto vmbr4
+iface vmbr4 inet static
+    address 192.168.5.10/24
+    bridge-ports enpA5
+    bridge-stp off
+    bridge-fd 0
+
+# B1
+auto enpB1
+iface enpB1 inet manual
+
+auto vmbr5
+iface vmbr5 inet static
+    address 192.168.6.10/24
+    bridge-ports enpB1
+    bridge-stp off
+    bridge-fd 0
+
+# B2
+auto enpB2
+iface enpB2 inet manual
+
+auto vmbr6
+iface vmbr6 inet static
+    address 192.168.7.10/24
+    bridge-ports enpB2
+    bridge-stp off
+    bridge-fd 0
+
+# B3
+auto enpB3
+iface enpB3 inet manual
+
+auto vmbr7
+iface vmbr7 inet static
+    address 192.168.8.10/24
+    bridge-ports enpB3
+    bridge-stp off
+    bridge-fd 0
+
+# B4
+auto enpB4
+iface enpB4 inet manual
+
+auto vmbr8
+iface vmbr8 inet static
+    address 192.168.9.10/24
+    bridge-ports enpB4
+    bridge-stp off
+    bridge-fd 0
+
+# B5
+auto enpB5
+iface enpB5 inet manual
+
+auto vmbr9
+iface vmbr9 inet static
+    address 192.168.10.10/24
+    bridge-ports enpB5
+    bridge-stp off
+    bridge-fd 0
+
+# MGMT 
+auto enpMGMT
+iface enpMGMT inet manual
+
+auto vmbr10
+iface vmbr10 inet static
+    address 192.168.11.10/24
+    bridge-ports enpMGMT
+    bridge-stp off
+    bridge-fd 0
+
+# SERWIS
+auto enpSERWIS
+iface enpSERWIS inet manual
+
+auto vmbr11
+iface vmbr11 inet static
+    address 192.168.12.10/24
+    bridge-ports enpSERWIS
+    bridge-stp off
+    bridge-fd 0
+
+source /etc/network/interfaces.d/*
