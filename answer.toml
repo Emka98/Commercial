@@ -1,0 +1,19 @@
+[global]
+keyboard = "pl"
+country = "pl"
+fqdn = "Urzadzenie.nazwaFirmy.local"
+mailto = "test@nazwafirmy.com"
+timezone = "Europe/Warsaw"
+root_password = "BardzoSilneHasło"
+reboot_mode = "power-off"
+
+[network]
+source = "from-answer"
+cidr = "192.168.1.200/24"
+dns = "192.168.1.200"
+gateway = "192.168.1.200"
+filter.ID_NET_NAME = "NazwaInrefaceuUrzadzenia"
+
+[disk-setup]
+filesystem = "ext4"
+disk-list = ["nvme0n1"]
