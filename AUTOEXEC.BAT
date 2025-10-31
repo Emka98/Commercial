@@ -10,14 +10,14 @@ echo Niepoprawny wybor!!!
 goto END
 
 :BIOS
-echo Rozpoczynam instalację ubios.nsh 
+echo Rozpoczynam instalacje ubios.nsh 
 fs0: 
 \biosAC30\ubios.nsh 
 exit
 goto END
 
 :WEDISH
-echo Instaluję wedid.nsh
+echo Instaluje wedid.nsh
 fs0:
 \PTN3460\wedid.nsh
 echo Wcisnij enter by zainstalowc gpio.nsh
@@ -29,5 +29,6 @@ goto END
 :END
 echo Skrypt zakonczony.
 pause
+
 
 
