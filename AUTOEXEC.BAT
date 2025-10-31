@@ -6,7 +6,7 @@ set /p opcja=Podaj numer opcji:
 
 if "%opcja%"=="1" goto BIOS
 if "%opcja%"=="2" goto WEDISH
-echo Niepoprawny wybór!
+echo Niepoprawny wybor!!!
 goto END
 
 :BIOS
@@ -27,6 +27,7 @@ echo Uruchamiam gpio.nsh
 goto END
 
 :END
-echo Skrypt zakończony.
+echo Skrypt zakonczony.
 pause
+
 
